@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <style>
+            body { margin: 0; z-index: 0;}
+            div{
+                z-index:1;
+                background-color: #ebebeb80;
+                right: 20px;
+                top: 20px;
+                width: 25%;
+                height:auto;
+                float: right;
+                position: absolute;
+                padding: 10px;
+
+                border-style: solid;
+                border-radius: 10px;
+            }
+            .number{
+                width:50px;
+            }
+            p{
+                width: 80%;
+                font-size: small;
+            }
+        </style>
+    </head>	
+	<body>
+        <canvas id="canvas"></canvas>
+        <div>
+            X:<input id="x" class="number" type="number">
+            Y:<input id="y" disabled readonly class="number" type="number">
+            Z:<input id="z" class="number" type="number">
+            <br>
+            <button id="Apply">Reset/Apply</button>
+            <button id="AddLayer">Add Layer</button>
+            <br>
+            Selected Layer<input class="number" id="selectedLayer" type="number">
+
+            <p>Any Cell with fewer than <input id="underpop" class="number" type="number"> neighbours dies from Underpopulation</p>
+            <p>Any Cell with more than <input id="overpop" class="number" type="number"> neighbours dies from Overpopulation</p>
+            
+            <p>Any Dead Cell with <input id="respawnLower" class="number" type="number">
+             to <input id="respawnUpper" class="number" type="number"> neighbours(inclusive) respawns</p>
+            <button id="Step">Step</button>
+            <button id="play">Play</button>
+            <button id="resetView">Reset View</button>
+        </div>
+        <script type="module" src="main.js"></script>
+	</body>
+</html>
