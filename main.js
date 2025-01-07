@@ -1,5 +1,4 @@
-import * as THREE from 'three';
-import { MeshBasicMaterial } from 'three';
+import * as THREE from "three";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const canvas = document.getElementById("canvas");
