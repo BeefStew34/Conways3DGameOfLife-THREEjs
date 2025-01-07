@@ -1,1 +1,0 @@
-# Conways3DGameOfLife-THREEjs
